@@ -1,0 +1,23 @@
+{
+  "name": "Minecraft",
+  "version": "6.0.0",
+  "description": "测试",
+  "main": "Main.js",
+  "scripts": {
+    "test": "node Main"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/IZIMUI/Minecraft.git"
+  },
+  "author": "CAIMEO",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/IZIMUI/Minecraft.git"
+  },
+  "homepage": "https://github.com/IZIMUI/Minecraft.git",
+  "dependencies": {
+    "meowslib": "^8.0.0",
+"uuid":"^3.3.2"
+  }
+}
