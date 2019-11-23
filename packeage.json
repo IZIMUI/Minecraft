@@ -13,9 +13,9 @@
   "author": "CAIMEO",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/IZIMUI/Minecraft.git"
+    "url": "https://github.com/IZIMUI/Minecraft/issues"
   },
-  "homepage": "https://github.com/IZIMUI/Minecraft.git",
+  "homepage": "https://github.com/IZIMUI/Minecraft#readme",
   "dependencies": {
     "meowslib": "^8.0.0",
 "uuid":"^3.3.2"
