@@ -8,7 +8,7 @@ const Parser = MeoWS.Parser;
 const Lang = MeoWS.Res.Lang;
 const log = MeoWS.Logger;
 
-let wss = new WSServer(419907);
+let wss = new WSServer(16384);
 
 console.log('\x1b[33m' + Lang.logo)
 wss.on('client', (session, request) => {
