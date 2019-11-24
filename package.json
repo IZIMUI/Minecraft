@@ -1,21 +1,21 @@
 {
-  "name": "Minecraft",
-  "version": "1.0.0",
-  "description": "测试脚本",
-  "main": "Mians.js",
+  "name": "WebSocket",
+  "version": "6.0.0",
+  "description": "",
+  "main": "Main.js",
   "scripts": {
-    "test": "node Mains"
+    "test": "Start Run"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/IZIMUI/Minecraft.git"
+    "url": "git+https://github.com/CAIMEOX/FastBuilder.git"
   },
-  "author": "IZIMUI",
+  "author": "触手TV紫幕",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/IZIMUI/Minecraft/issues"
+    "url": "https://github.com/CAIMEOX/FastBuilder/issues"
   },
-  "homepage": "https://github.com/IZIMUI/Minecraft#readme",
+  "homepage": "https://github.com/CAIMEOX/FastBuilder#readme",
   "dependencies": {
     "meowslib": "^8.0.0",
 "uuid":"^3.3.2"
