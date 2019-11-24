@@ -1,21 +1,21 @@
 {
-  "name": "WebSocket",
-  "version": "6.0.0",
-  "description": "",
+  "name": "WebSocket of Minecraft",
+  "version": "1.0.0",
+  "description": "作者QQ：2908554069\n 作者直播间：http://chushou.tv/room/41990704.htm",
   "main": "Main.js",
   "scripts": {
-    "test": "Start Run"
+    "test": "node Main"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/CAIMEOX/FastBuilder.git"
+    "url": "git+https://github.com/IZIMUI/Minecraft.git"
   },
   "author": "触手TV紫幕",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/CAIMEOX/FastBuilder/issues"
+    "url": "https://github.com/IZIMUI/Minecraft/issues"
   },
-  "homepage": "https://github.com/CAIMEOX/FastBuilder#readme",
+  "homepage": "https://github.com/IZIMUI/Minecraft#readme",
   "dependencies": {
     "meowslib": "^8.0.0",
 "uuid":"^3.3.2"
