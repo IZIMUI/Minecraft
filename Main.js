@@ -1,5 +1,5 @@
 const WebSocket = require('ws');
-onst wss = new WebSocket.Server({ port: 8906 });
+const wss = new WebSocket.Server({ port: 8906 });
 const uuid = require('node-uuid');
 // 省略一些参数的定义
 // 服务端处理连接
