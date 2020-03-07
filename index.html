@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<link href="Css/index.css" rel="stylesheet"/>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+<title>default</title>
+</head>
+<body>
+<div align="center">
+<table border="1">
+<thead>
+<tr>
+<th class="subtitle">作者：lZiMUl</th>
+<th class="title">
+WebSite&nbspControl&nbspMinecraft
+</th>
+</tr>
+<tr>
+<td>
+<input id="ConnectUrl" class="Input" placeholder="请输入WebSocket服务器地址"/>
+</td>
+<td>
+<button id="Connect" class="Connect">连接</button>
+<button id="Close" class="Close">断开</button>
+</td>
+</tr>
+<tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr>
+</thead>
+<tbody>
+<tr>
+<th class="title1">事&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp件</th>
+<th class="title2">操&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp作</th>
+</tr>
+<tr>
+<td>模&nbsp&nbsp&nbsp&nbsp&nbsp式</td>
+<td>
+<button onclick='SendCommand("Official", "gamemode 0")'>生存</button>
+<button onclick='SendCommand("Official", "gamemode 1")'>创造</button>
+<button onclick='SendCommand("Official", "gamemode 2")'>冒险</button>
+</td>
+</tr>
+
+<tr>
+<td>时&nbsp&nbsp&nbsp&nbsp&nbsp间</td>
+<td>
+<button onclick='SendCommand("Official", "time set sunrise")'>日出</button>
+<button onclick='SendCommand("Official", "time set day")'>白日</button>
+<button onclick='SendCommand("Official", "time set noon")'>中午</button>
+<button onclick='SendCommand("Official", "time set sunset")'>日落</button>
+<button onclick='SendCommand("Official", "time set night")'>夜晚</button>
+<button onclick='SendCommand("Official", "time set midnight")'>午夜</button>
+</td>
+</tr>
+
+<tr>
+<td>天&nbsp&nbsp&nbsp&nbsp&nbsp气</td>
+<td>
+<button onclick='SendCommand("Official", "weather clear")'>晴天</button>
+<button onclick='SendCommand("Official", "weather rain")'>雨天</button>
+<button onclick='SendCommand("Official", "weather thunder")'>雷暴</button>
+</td>
+</tr>
+
+<tr>
+<td>其&nbsp&nbsp&nbsp&nbsp&nbsp他</td>
+<td>
+<button onclick='SendCommand("Other", "设家")'>设家</button>
+<button onclick='SendCommand("Other", "回家")'>回家</button>
+</td>
+</tr>
+<tr></tr><tr></tr><tr></tr>
+<tr>
+<th class="title1">指&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp令</th>
+<th class="title2">操&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp作</th>
+</tr>
+
+<tr>
+<td><input id="Input" class="Input" placeholder="请输入指令"/></td>
+<td><button class="Send" onclick='SendCommand("Official", document.getElementById("Input").value); document.getElementById("Input").value =""'>发送</button></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="loading" class="loader"></div>
+</body>
+<script src="JavaScripts/index.js"></script>
+</html>
