@@ -122,7 +122,7 @@ Time:2000
 });
 }}
 
-document.getElementById("Run").addEventListener(function(){
+document.getElementById("Run").addEventListener("click", function(){
 alert()
 })
 
