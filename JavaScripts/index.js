@@ -122,6 +122,10 @@ Time:2000
 });
 }}
 
+document.getElementById("Run").addEventListener(function(){
+alert()
+})
+
 function Toast(Strings){
 let Establish = document.createElement("div");
 Establish.setAttribute("id","Toast");
