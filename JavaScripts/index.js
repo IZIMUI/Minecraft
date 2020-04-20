@@ -1,3 +1,21 @@
+/**
+* 此JS由〔lZiMUl〕个人编写开发
+* 部分函数是从网络参考的
+* 禁止修改和倒卖 否则承担法律责任
+* 可授权使用,QQ〔2908554069〕 答案〔程序员/主播〕
+* BiliBili 地址〔https://space.bilibili.com/291883246?share_medium=android&share_source=copy_link&bbid=XYF83CAFCD3359D0884B8E2CBE73B95A05E86&ts=1587381625535〕
+* 我的服务 包括〔JS定制〕〔JS美化〕〔JS加密〕〔JS解密〕〔JS编码〕〔JS解码〕
+* 因为此脚本开源 所以我不加密了 到时候修改还麻烦
+* 感谢大家支持
+
+* 还有
+
+* 本人只会JavaScript 不会Css 如果您会请加我QQ 
+* 让我们一起为 《WebSocket Server Of Minecraft》网站加油吧
+
+**/
+
+
 var ws;
 var ConnectStatus = false;
 
@@ -32,7 +50,7 @@ if(ConnectStatus == true){
 ws.close()
 Toast({
 Message:"已断开",
-Color: "green",
+Color: "red",
 Time:2000
 });
 ConnectStatus = false;
