@@ -61,7 +61,7 @@ document.getElementById("Close").setAttribute("disabled", "true");
 document.getElementById("Close").style.background = "gray";
 }})
 
-function Connect(){
+function Connect(){alert("成功")
 ws.onopen = function(){
 ws.onmessage = function(Data){
 const Result = JSON.parse(Data.data).Result;
