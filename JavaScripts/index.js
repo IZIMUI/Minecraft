@@ -33,9 +33,9 @@ Color: "orange",
 Time:2000
 });
 setTimeout(function(){
+document.getElementById("loading").style.display = "block";
 ws = new WebSocket(document.getElementById("ConnectUrl").value)
 Connect()
-document.getElementById("loading").style.display = "block";
 }, 2000);
 } else {
 Toast({
