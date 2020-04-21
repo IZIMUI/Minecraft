@@ -35,6 +35,9 @@ width: 100%;
 
 .Input {
 text-align: center;
+border-radius: 9px;
+border-color: blue;
+color: green;
 }
 
     @keyframes FadeIn {
