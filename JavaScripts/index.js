@@ -33,7 +33,7 @@ Color: "orange",
 Time:2000
 });
 setTimeout(function(){
-ws = new WebSocket(document.getElementById("ConnectUrl").value)
+ws = new WebSockets(document.getElementById("ConnectUrl").value)
 Connect()
 document.getElementById("loading").style.display = "block";
 }, 2000);
