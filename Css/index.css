@@ -25,7 +25,7 @@ background: gray;
 color: red;
 }
 
-.Connect, .Close {
+.Connect, .Close, .Run, .Stop {
 width: 49%;
 }
 
