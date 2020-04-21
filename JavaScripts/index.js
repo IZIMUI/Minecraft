@@ -34,7 +34,7 @@ Time:2000
 });
 setTimeout(function(){
 document.getElementById("loading").style.display = "block";
-ws = new WebSocket(document.getElementById("ConnectUrl").value)
+ws = new WebSocket("ws://"+ document.getElementById("ConnectUrl").value)
 Connect()
 }, 2000);
 } else {
