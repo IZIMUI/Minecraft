@@ -32,8 +32,9 @@ Message:"正在连接请稍等",
 Color: "orange",
 Time:2000
 });
-setTimeout(function(){
-ws = new WebSocket(eval("ws:/"+"/"+ document.getElementById("ConnectUrl").value))
+setTimeout(function() {
+let WSUrl = "ws:/"+"/"+ document.getElementById("ConnectUrl").value
+ws = new WebSocket(WSUrl)
 Connect()
 document.getElementById("loading").style.display = "block";
 }, 2000);
