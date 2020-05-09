@@ -76,6 +76,7 @@ function Decode(Blob) {
     }
     Reader.readAsArrayBuffer(Blob);
   })
+}
 };
 
 document.getElementById("Connect").addEventListener('click', function(){
