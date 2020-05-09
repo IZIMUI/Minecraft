@@ -215,13 +215,13 @@ DanMu(Number(Room_Number), function(Object){
 document.getElementById("Content").value += "【" + JSON.parse(Object).User + "】：" + JSON.parse(Object).Message + "\n";
 })
 Toast({
-Message:成功绑定直播间",
+Message: "成功绑定直播间",
 Color: "grenn",
 Time:2000
 });
 } else {
 Toast({
-Message:"房间号不能为空",
+Message: "房间号不能为空",
 Color: "red",
 Time:2000
 });
