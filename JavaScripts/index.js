@@ -76,8 +76,35 @@ function Decode(Blob) {
     }
     Reader.readAsArrayBuffer(Blob);
   })
-}
 };
+wss = new WebSocket("wss://broadcastlv.chat.bilibili.com:2245/sub");
+wss.onopen = function() {
+    wss.send(Encode(JSON.stringify({
+      "roomid": Room_Number
+    }), 7));
+    setInterval(function() {
+      ws.send(Encode("", 2));
+    }, 1000);
+  };
+
+wss.onmessage = async function(Event) {
+    const Packet = await Decode(Event.data);
+    switch (Packet.Code) {
+      case 5:
+        Packet.Body.forEach(function(Body) {
+          switch (Body.cmd) {
+            case 'DANMU_MSG':
+    Callback(JSON.stringify({
+"User": Body.info[2][1] ,
+"Message": Body.info[1]
+    }))
+              break;
+          }
+        })
+        break;
+    }
+  }
+}
 
 document.getElementById("Connect").addEventListener('click', function(){
 if(document.getElementById("ConnectUrl").value){
@@ -184,9 +211,20 @@ alert();
 
 function Connect_Room(Room_Number){
 if(Room_Number){
-alert("成功绑定直播间")
+DanMu(Number(Room_Number), function(Object){
+document.getElementById("Content").value += "【" + JSON.parse(Object).User + "】：" + JSON.parse(Object).Message + "\n";
+})
+Toast({
+Message:成功绑定直播间",
+Color: "grenn",
+Time:2000
+});
 } else {
-alert("房间号不能为空");
+Toast({
+Message:"房间号不能为空",
+Color: "red",
+Time:2000
+});
 }};
 
 function Toast(Strings){
