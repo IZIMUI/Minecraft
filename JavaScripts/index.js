@@ -181,6 +181,14 @@ document.getElementById("Run_File").addEventListener("click", function(){
 alert()
 })
 
+document.getElementById("Bind_Room_Number").addEventListener("click", function(){
+if(document.getElementById("Room_Number").value){
+Room_Bind = true
+alert("成功绑定直播间")
+} else {
+alert("房间号不能为空");
+}});
+
 function Toast(Strings){
 let Establish = document.createElement("div");
 Establish.setAttribute("id","Toast");
