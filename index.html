@@ -91,12 +91,12 @@ WebSite&nbspControl&nbspMinecraft
 </tr>
 <tr></tr><tr></tr><tr></tr>
 <tr>
-<th class="title1">Bili&nbspBili&nbsp&nbsp&nbsp&nbsp弹&nbsp&nbsp&nbsp幕</th>
+<th class="title1">Bili&nbspBili&nbsp&nbsp&nbsp弹&nbsp&nbsp&nbsp幕</th>
 <th class="title2">操&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp作</th>
 </tr>
 <tr>
 <td><input id="Room_ID" class="Input" oninput='value=value.replace(/[^\d]/g,"")' placeholder="请输入直播间房号"/></td>
-<td><button class="Send" onclick='document.getElementById("Room_ID").value'>绑定</button></td>
+<td><button class="Send" onclick='Connect_Room(document.getElementById("Room_ID").value)'>绑定</button></td>
 </tr>
 <tr>
 <td colspan="2"><textarea id="Content" rows="50" cols="50" readonly></textarea></td>
