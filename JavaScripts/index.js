@@ -23,6 +23,60 @@ document.getElementById("loading").style.display = "none";
 document.getElementById("Close").setAttribute("disabled", "true");
 document.getElementById("Close").style.background = "gray";
 
+function DanMu(Room_Number, Callback) {
+function ReadInt(Buffer, Start, Len) {
+  let Result = 0;
+  for (let Value = Len - 1; Value >= 0; Value--) {
+    Result += Math.pow(256, Len - Value - 1) * Buffer[Start + Value];
+  };
+  return Result;
+};
+
+function WriteInt(Buffer, Value) {
+  let Values = 0;
+  while (Values < 4) {
+    Buffer[Values] = Value / Math.pow(256, 4 - Values - 1);
+    Values++;
+  }
+};
+
+function Encode(Str, Op) {
+  const Data = new TextEncoder("utf-8").encode(Str);
+  const PacketLen = 16 + Data.byteLength;
+  const Header = [0, 0, 0, 0, 0, 16, 0, 1, 0, 0, 0, Op, 0, 0, 0, 1];
+  WriteInt(Header, PacketLen);
+  return (new Uint8Array(Header.concat(...Data))).buffer;
+};
+
+function Decode(Blob) {
+  return new Promise(function(Resolve, reject) {
+    let Reader = new FileReader();
+    Reader.onload = function(Event) {
+      let Buffer = new Uint8Array(Event.target.result);
+      let Result = {};
+      Result.Code = ReadInt(Buffer, 8, 4);
+      if (Result.Code === 5) {
+        Result.Body = [];
+        let Offset = 0;
+        while (Offset < Buffer.length) {
+          let PacketLen = ReadInt(Buffer, Offset, 4);
+          let Body = new TextDecoder("utf-8").decode(Buffer.slice(Offset + 16, Offset + PacketLen));
+          if (Body) {
+            Result.Body.push(JSON.parse(Body));
+          }
+          Offset += PacketLen;
+        }
+      } else if (Result.Code === 3) {
+        Result.Body = {
+          count: ReadInt(Buffer, 16, 4)
+        };
+      }
+      Resolve(Result);
+    }
+    Reader.readAsArrayBuffer(Blob);
+  })
+};
+
 document.getElementById("Connect").addEventListener('click', function(){
 if(document.getElementById("ConnectUrl").value){
 document.getElementById("Connect").setAttribute("disabled", "true");
