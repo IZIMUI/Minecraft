@@ -17,6 +17,7 @@
 
 
 var ws;
+var wss = new WebSocket("wss://broadcastlv.chat.bilibili.com:2245/sub");
 var ConnectStatus = false;
 
 document.getElementById("loading").style.display = "none";
