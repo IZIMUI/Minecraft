@@ -292,7 +292,7 @@ var Server = WebSocket.createServer(function(conn) {
 	};
 
 	function EventUpdate() {
-		conn.sendText(JSON.stringify({
+		/*conn.sendText(JSON.stringify({
 			"body": {
 				"origin": {
 					"type": "player"
@@ -306,7 +306,7 @@ var Server = WebSocket.createServer(function(conn) {
 				"version": 1,
 				"EventName": "commandRequest"
 			}
-		}));
+		}));*/
 	};
 
 	function DataComparison(ArrayName, Content) {
