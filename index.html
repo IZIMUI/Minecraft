@@ -2659,6 +2659,8 @@ document.getElementById("Close").setAttribute("disabled", "true");
 document.getElementById("Close").style.background = "gray";
 
 var ConnectStatus = false;
+var Room_Numbers;
+
 function DanMu(Room_Number, Callback) {
 function ReadInt(Buffer, Start, Len) {
   let Result = 0;
@@ -2872,9 +2874,18 @@ alert();
 
 function Connect_Room(Room_Number){
 if(Room_Number){
+if(Room_Number !== Room_Numbers){
+Room_Numbers = Room_Number;
 DanMu(Number(Room_Number), function(Object){
 document.getElementById("Content").value += "【" + JSON.parse(Object).User + "】：" + JSON.parse(Object).Message + "\n";
-})
+});
+} else {
+Toast({
+Message: "房间号一致，无需更改",
+Color: "red",
+Time:2000
+});
+};
 Toast({
 Message: "成功绑定直播间",
 Color: "green",
