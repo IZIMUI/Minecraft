@@ -458,7 +458,7 @@ var Server = WebSocket.createServer(function(conn) {
 								SendMessage("成功写入文件");
 							})
 						} else if (Messages == "文件 复制文件 " + Data[2] + " " + Data[3]) {
-							FileSystem.copyFile('../Files/' + Data[2], Data[3], err = >{
+							FileSystem.copyFile('../Files/' + Data[2], Data[3], err => {
 								SendMessage(err);
 							});
 						} else if (Messages == "文件 运行文件 " + Data[2]) {
