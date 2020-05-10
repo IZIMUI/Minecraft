@@ -216,7 +216,7 @@ document.getElementById("Content").value += "【" + JSON.parse(Object).User + "�
 })
 Toast({
 Message: "成功绑定直播间",
-Color: "grenn",
+Color: "green",
 Time:2000
 });
 } else {
