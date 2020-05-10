@@ -558,7 +558,7 @@ Time:2000
 });
 setTimeout(function(){
 document.getElementById("loading").style.display = "block";
-ws = new WebSocket(`ws://192.168.1.105:4199`)
+ws = new WebSocket("ws://192.168.1.105:4199")
 //ws = new WebSocket(`ws://${document.getElementById("ConnectUrl").value}`)
 Connect()
 }, 2000);
