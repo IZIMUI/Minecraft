@@ -461,8 +461,6 @@ WebSite&nbspControl&nbspMinecraft
 
 **/
 
-var ws;
-
 document.getElementById("loading").style.display = "none";
 document.getElementById("Close").setAttribute("disabled", "true");
 document.getElementById("Close").style.background = "gray";
@@ -526,7 +524,7 @@ wss.onopen = function() {
       "roomid": Room_Number
     }), 7));
     setInterval(function() {
-      ws.send(Encode("", 2));
+      wss.send(Encode("", 2));
     }, 1000);
   };
 
@@ -560,8 +558,8 @@ Time:2000
 });
 setTimeout(function(){
 document.getElementById("loading").style.display = "block";
-alert(`ws://${document.getElementById("ConnectUrl").value}`)
-ws = new WebSocket(`ws://${document.getElementById("ConnectUrl").value}`)
+ws = new WebSocket(`ws://192.168.1.105:4199`)
+//ws = new WebSocket(`ws://${document.getElementById("ConnectUrl").value}`)
 Connect()
 }, 2000);
 } else {
