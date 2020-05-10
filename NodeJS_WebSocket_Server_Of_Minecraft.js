@@ -114,9 +114,7 @@ var Server = WebSocket.createServer(function(conn) {
 
 	FileSystem.readFile('../Server.json', 'utf-8',
 	function(err, data) {
-		if (err) {
-			console.log("Server文件有错误");
-		} else {
+		if (!err) {
 			let Server_Settings = JSON.parse(data.toString());
 			ServerSettings("friendly_Fire", Server_Settings.Server_Settings.World_Settings.friendly_Fire);
 			ServerSettings("Show_Coordinates", Server_Settings.Server_Settings.World_Settings.Show_Coordinates);
