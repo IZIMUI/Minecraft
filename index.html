@@ -2876,6 +2876,7 @@ function Connect_Room(Room_Number){
 if(Room_Number !== Room_Numbers){
 if(Room_Number){
 Room_Numbers = Room_Number;
+wss.close();
 document.getElementById("Content").value = "";
 DanMu(Number(Room_Number), function(Object){
 document.getElementById("Content").value += "【" + JSON.parse(Object).User + "】：" + JSON.parse(Object).Message + "\n";
