@@ -45,6 +45,3 @@ function lZiMUl_ID_Card_Verification(Number) {
             else
               return '{"Type": "Caveat", "Text": "请输入身份证", "Return": false}';
           };
-
-          Callback(ID_Card_Verification(Options.Head.ID_Card))
-          break;
