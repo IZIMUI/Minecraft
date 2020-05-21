@@ -186,7 +186,7 @@ const Encoding_lZiMUl_List = new Array({
     "Encoding": "BABABA"
   });
   
-  const Encode_lZiMUl = function(Data, Callback) {
+  const lZiMUl_Format_Encode = function(Data, Callback) {
     function Encode(Str) {
     let Res = [];
     let Search_Value;
@@ -250,7 +250,7 @@ const Encoding_lZiMUl_List = new Array({
 };
 
 
-const Decode_lZiMUl = function(Data, Callback) {
+const lZiMUl_Format_Decode = function(Data, Callback) {
   function Binary_Decode(Str) {
     var Res = [];
     var Str = String(Str).split(" ");
