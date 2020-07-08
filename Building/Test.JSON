@@ -1,0 +1,257 @@
+{
+  "Name": "測試建築",
+  "Description": "暫無描述",
+  "Author": "lZiMUl",
+  "Type": "Ornamental",
+  "Block_Array_Data": [{
+    "Name": "鑽石塊",
+    "ID": "Diamond_Block",
+    "Data": 0,
+    "Mode": "Keep",
+    "Location": {
+      "X": 0,
+      "Y": 5,
+      "Z": 0
+    }
+  }, {
+    "Name": "鑽石塊",
+    "ID": "Diamond_Block",
+    "Data": 0,
+    "Mode": "Keep",
+    "Location": {
+      "X": 1,
+      "Y": 6,
+      "Z": 1
+    }
+  }, {
+    "Name": "鑽石塊",
+    "ID": "Diamond_Block",
+    "Data": 0,
+    "Mode": "Keep",
+    "Location": {
+      "X": 1,
+      "Y": 6,
+      "Z": -1
+    }
+  }, {
+    "Name": "鑽石塊",
+    "ID": "Diamond_Block",
+    "Data": 0,
+    "Mode": "Keep",
+    "Location": {
+      "X": -1,
+      "Y": 6,
+      "Z": 1
+    }
+  }, {
+    "Name": "鑽石塊",
+    "ID": "Diamond_Block",
+    "Data": 0,
+    "Mode": "Keep",
+    "Location": {
+      "X": -1,
+      "Y": 6,
+      "Z": -1
+    }
+  }, {
+    "Name": "鑽石塊",
+    "ID": "Diamond_Block",
+    "Data": 0,
+    "Mode": "Keep",
+    "Location": {
+      "X": 2,
+      "Y": 7,
+      "Z": 2
+    }
+  }, {
+    "Name": "鑽石塊",
+    "ID": "Diamond_Block",
+    "Data": 0,
+    "Mode": "Keep",
+    "Location": {
+      "X": 2,
+      "Y": 7,
+      "Z": -2
+    }
+  }, {
+    "Name": "鑽石塊",
+    "ID": "Diamond_Block",
+    "Data": 0,
+    "Mode": "Keep",
+    "Location": {
+      "X": -2,
+      "Y": 7,
+      "Z": 2
+    }
+  }, {
+    "Name": "鑽石塊",
+    "ID": "Diamond_Block",
+    "Data": 0,
+    "Mode": "Keep",
+    "Location": {
+      "X": -2,
+      "Y": 7,
+      "Z": -2
+    }
+  }, {
+    "Name": "鑽石塊",
+    "ID": "Diamond_Block",
+    "Data": 0,
+    "Mode": "Keep",
+    "Location": {
+      "X": 3,
+      "Y": 8,
+      "Z": 3
+    }
+  }, {
+    "Name": "鑽石塊",
+    "ID": "Diamond_Block",
+    "Data": 0,
+    "Mode": "Keep",
+    "Location": {
+      "X": 3,
+      "Y": 8,
+      "Z": -3
+    }
+  }, {
+    "Name": "鑽石塊",
+    "ID": "Diamond_Block",
+    "Data": 0,
+    "Mode": "Keep",
+    "Location": {
+      "X": -3,
+      "Y": 8,
+      "Z": 3
+    }
+  }, {
+    "Name": "鑽石塊",
+    "ID": "Diamond_Block",
+    "Data": 0,
+    "Mode": "Keep",
+    "Location": {
+      "X": -3,
+      "Y": 8,
+      "Z": -3
+    }
+  }, {
+    "Name": "鑽石塊",
+    "ID": "Diamond_Block",
+    "Data": 0,
+    "Mode": "Keep",
+    "Location": {
+      "X": 4,
+      "Y": 9,
+      "Z": 4
+    }
+  }, {
+    "Name": "鑽石塊",
+    "ID": "Diamond_Block",
+    "Data": 0,
+    "Mode": "Keep",
+    "Location": {
+      "X": 4,
+      "Y": 9,
+      "Z": -4
+    }
+  }, {
+    "Name": "鑽石塊",
+    "ID": "Diamond_Block",
+    "Data": 0,
+    "Mode": "Keep",
+    "Location": {
+      "X": -4,
+      "Y": 9,
+      "Z": 4
+    }
+  }, {
+    "Name": "鑽石塊",
+    "ID": "Diamond_Block",
+    "Data": 0,
+    "Mode": "Keep",
+    "Location": {
+      "X": -4,
+      "Y": 9,
+      "Z": -4
+    }
+  }, {
+    "Name": "鑽石塊",
+    "ID": "Diamond_Block",
+    "Data": 0,
+    "Mode": "Keep",
+    "Location": {
+      "X": 5,
+      "Y": 10,
+      "Z": 5
+    }
+  }, {
+    "Name": "鑽石塊",
+    "ID": "Diamond_Block",
+    "Data": 0,
+    "Mode": "Keep",
+    "Location": {
+      "X": 5,
+      "Y": 10,
+      "Z": -5
+    }
+  }, {
+    "Name": "鑽石塊",
+    "ID": "Diamond_Block",
+    "Data": 0,
+    "Mode": "Keep",
+    "Location": {
+      "X": -5,
+      "Y": 10,
+      "Z": 5
+    }
+  }, {
+    "Name": "鑽石塊",
+    "ID": "Diamond_Block",
+    "Data": 0,
+    "Mode": "Keep",
+    "Location": {
+      "X": -5,
+      "Y": 10,
+      "Z": -5
+    }
+  }, {
+    "Name": "鑽石塊",
+    "ID": "Diamond_Block",
+    "Data": 0,
+    "Mode": "Keep",
+    "Location": {
+      "X": 6,
+      "Y": 11,
+      "Z": 6
+    }
+  }, {
+    "Name": "鑽石塊",
+    "ID": "Diamond_Block",
+    "Data": 0,
+    "Mode": "Keep",
+    "Location": {
+      "X": 6,
+      "Y": 11,
+      "Z": -6
+    }
+  }, {
+    "Name": "鑽石塊",
+    "ID": "Diamond_Block",
+    "Data": 0,
+    "Mode": "Keep",
+    "Location": {
+      "X": -6,
+      "Y": 11,
+      "Z": 6
+    }
+  }, {
+    "Name": "鑽石塊",
+    "ID": "Diamond_Block",
+    "Data": 0,
+    "Mode": "Keep",
+    "Location": {
+      "X": -6,
+      "Y": 11,
+      "Z": -6
+    }
+  }]
+}
