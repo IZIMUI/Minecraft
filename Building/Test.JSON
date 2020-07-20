@@ -1,257 +1,121 @@
 {
-  "Name": "測試建築",
-  "Description": "暫無描述",
-  "Author": "lZiMUl",
-  "Type": "Ornamental",
-  "Block_Array_Data": [{
-    "Name": "鑽石塊",
-    "ID": "Diamond_Block",
-    "Data": 0,
-    "Mode": "Keep",
-    "Location": {
-      "X": 0,
-      "Y": 5,
-      "Z": 0
+    "Code":1000,
+    "Message":"玩家建築數據配置獲取成功",
+    "Datas":{
+        "Headers":{
+            "Name":"測試建築",
+            "Description":"暫無描述",
+            "Author":"lZiMUl",
+            "Type":"Ornamental",
+            "Uuid":"7b1b89ab-9816-4e89-b1ad-4bdede7b9197",
+            "Certification":{
+                "License":"lZiMUl",
+                "PublicKey":null
+            },
+            "Version":[
+                0,
+                0,
+                1
+            ]
+        },
+        "Bodyers":{
+            "Initialization":{
+                "Commands":[
+                    "GameRule CommandBlockOutput False",
+                    "SetWorldSpawn 0 22 0",
+                    "SpawnPoint 0 22 0"
+                ],
+                "Blocks":[
+                    {
+                        "ID":"Glass",
+                        "Data":0,
+                        "Mode":"Keep",
+                        "Location":{
+                            "X":0,
+                            "Y":20,
+                            "Z":0
+                        }
+                    },
+                    {
+                        "ID":"Grass",
+                        "Data":0,
+                        "Mode":"Keep",
+                        "Location":{
+                            "X":0,
+                            "Y":21,
+                            "Z":0
+                        }
+                    }
+                ],
+                "Entitys":[
+                    {
+                        "Name":"可耐的僵尸",
+                        "ID":"Zombie",          
+                        "Event":"Minecraft:Entity_Spawned",
+                        "Location":{
+                            "X":0,
+                            "Y":30,
+                            "Z":0
+                        }
+                    },
+                    {
+                        "Name":"白白的骷髏",
+                        "ID":"Skeleton",          
+                        "Event":"Minecraft:Entity_Spawned",
+                        "Location":{
+                            "X":0,
+                            "Y":30,
+                            "Z":0
+                        }
+                    }
+                ]
+            },
+            "Blocks":[
+                {
+                    "ID":"Diamond_Block",
+                    "Data":0,
+                    "Mode":"Keep",
+                    "Location":{
+                        "X":20,
+                        "Y":20,
+                        "Z":20
+                    }
+                },
+                {
+                    "ID":"RedStone_Block",
+                    "Data":0,
+                    "Mode":"Keep",
+                    "Location":{
+                        "X":20,
+                        "Y":21,
+                        "Z":20
+                    }
+                }
+            ],
+            "Entitys":[
+                {
+                    "Name":"綠綠的苦力怕",
+                    "ID":"Creeper",
+                    "Event":"Minecraft:Entity_Spawned",
+                    "Location":{
+                        "X":0,
+                        "Y":20,
+                        "Z":0
+                    }
+                },
+                {
+                    "Name":"黑黑的蜘蛛",
+                    "ID":"Spider",
+                    "Event":"Minecraft:Entity_Spawned",
+                    "Location":{
+                        "X":0,
+                        "Y":20,
+                        "Z":0
+                    }
+                }
+            ]
+        },
+        "Footers":{
+        }
     }
-  }, {
-    "Name": "鑽石塊",
-    "ID": "Diamond_Block",
-    "Data": 0,
-    "Mode": "Keep",
-    "Location": {
-      "X": 1,
-      "Y": 6,
-      "Z": 1
-    }
-  }, {
-    "Name": "鑽石塊",
-    "ID": "Diamond_Block",
-    "Data": 0,
-    "Mode": "Keep",
-    "Location": {
-      "X": 1,
-      "Y": 6,
-      "Z": -1
-    }
-  }, {
-    "Name": "鑽石塊",
-    "ID": "Diamond_Block",
-    "Data": 0,
-    "Mode": "Keep",
-    "Location": {
-      "X": -1,
-      "Y": 6,
-      "Z": 1
-    }
-  }, {
-    "Name": "鑽石塊",
-    "ID": "Diamond_Block",
-    "Data": 0,
-    "Mode": "Keep",
-    "Location": {
-      "X": -1,
-      "Y": 6,
-      "Z": -1
-    }
-  }, {
-    "Name": "鑽石塊",
-    "ID": "Diamond_Block",
-    "Data": 0,
-    "Mode": "Keep",
-    "Location": {
-      "X": 2,
-      "Y": 7,
-      "Z": 2
-    }
-  }, {
-    "Name": "鑽石塊",
-    "ID": "Diamond_Block",
-    "Data": 0,
-    "Mode": "Keep",
-    "Location": {
-      "X": 2,
-      "Y": 7,
-      "Z": -2
-    }
-  }, {
-    "Name": "鑽石塊",
-    "ID": "Diamond_Block",
-    "Data": 0,
-    "Mode": "Keep",
-    "Location": {
-      "X": -2,
-      "Y": 7,
-      "Z": 2
-    }
-  }, {
-    "Name": "鑽石塊",
-    "ID": "Diamond_Block",
-    "Data": 0,
-    "Mode": "Keep",
-    "Location": {
-      "X": -2,
-      "Y": 7,
-      "Z": -2
-    }
-  }, {
-    "Name": "鑽石塊",
-    "ID": "Diamond_Block",
-    "Data": 0,
-    "Mode": "Keep",
-    "Location": {
-      "X": 3,
-      "Y": 8,
-      "Z": 3
-    }
-  }, {
-    "Name": "鑽石塊",
-    "ID": "Diamond_Block",
-    "Data": 0,
-    "Mode": "Keep",
-    "Location": {
-      "X": 3,
-      "Y": 8,
-      "Z": -3
-    }
-  }, {
-    "Name": "鑽石塊",
-    "ID": "Diamond_Block",
-    "Data": 0,
-    "Mode": "Keep",
-    "Location": {
-      "X": -3,
-      "Y": 8,
-      "Z": 3
-    }
-  }, {
-    "Name": "鑽石塊",
-    "ID": "Diamond_Block",
-    "Data": 0,
-    "Mode": "Keep",
-    "Location": {
-      "X": -3,
-      "Y": 8,
-      "Z": -3
-    }
-  }, {
-    "Name": "鑽石塊",
-    "ID": "Diamond_Block",
-    "Data": 0,
-    "Mode": "Keep",
-    "Location": {
-      "X": 4,
-      "Y": 9,
-      "Z": 4
-    }
-  }, {
-    "Name": "鑽石塊",
-    "ID": "Diamond_Block",
-    "Data": 0,
-    "Mode": "Keep",
-    "Location": {
-      "X": 4,
-      "Y": 9,
-      "Z": -4
-    }
-  }, {
-    "Name": "鑽石塊",
-    "ID": "Diamond_Block",
-    "Data": 0,
-    "Mode": "Keep",
-    "Location": {
-      "X": -4,
-      "Y": 9,
-      "Z": 4
-    }
-  }, {
-    "Name": "鑽石塊",
-    "ID": "Diamond_Block",
-    "Data": 0,
-    "Mode": "Keep",
-    "Location": {
-      "X": -4,
-      "Y": 9,
-      "Z": -4
-    }
-  }, {
-    "Name": "鑽石塊",
-    "ID": "Diamond_Block",
-    "Data": 0,
-    "Mode": "Keep",
-    "Location": {
-      "X": 5,
-      "Y": 10,
-      "Z": 5
-    }
-  }, {
-    "Name": "鑽石塊",
-    "ID": "Diamond_Block",
-    "Data": 0,
-    "Mode": "Keep",
-    "Location": {
-      "X": 5,
-      "Y": 10,
-      "Z": -5
-    }
-  }, {
-    "Name": "鑽石塊",
-    "ID": "Diamond_Block",
-    "Data": 0,
-    "Mode": "Keep",
-    "Location": {
-      "X": -5,
-      "Y": 10,
-      "Z": 5
-    }
-  }, {
-    "Name": "鑽石塊",
-    "ID": "Diamond_Block",
-    "Data": 0,
-    "Mode": "Keep",
-    "Location": {
-      "X": -5,
-      "Y": 10,
-      "Z": -5
-    }
-  }, {
-    "Name": "鑽石塊",
-    "ID": "Diamond_Block",
-    "Data": 0,
-    "Mode": "Keep",
-    "Location": {
-      "X": 6,
-      "Y": 11,
-      "Z": 6
-    }
-  }, {
-    "Name": "鑽石塊",
-    "ID": "Diamond_Block",
-    "Data": 0,
-    "Mode": "Keep",
-    "Location": {
-      "X": 6,
-      "Y": 11,
-      "Z": -6
-    }
-  }, {
-    "Name": "鑽石塊",
-    "ID": "Diamond_Block",
-    "Data": 0,
-    "Mode": "Keep",
-    "Location": {
-      "X": -6,
-      "Y": 11,
-      "Z": 6
-    }
-  }, {
-    "Name": "鑽石塊",
-    "ID": "Diamond_Block",
-    "Data": 0,
-    "Mode": "Keep",
-    "Location": {
-      "X": -6,
-      "Y": 11,
-      "Z": -6
-    }
-  }]
 }
