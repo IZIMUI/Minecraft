@@ -2716,9 +2716,10 @@ function Decode(Blob) {
 };
 wss = new WebSocket("wss://broadcastlv.chat.bilibili.com:2245/sub");
 wss.onopen = function() {
-    wss.send(Encode(JSON.stringify({
+    wss.send(Token = Encode(JSON.stringify({
       "roomid": Room_Number
     }), 7));
+alert(Token)
     setInterval(function() {
       wss.send(Encode("", 2));
     }, 1000);
