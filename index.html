@@ -2659,7 +2659,7 @@ document.getElementById("Close").setAttribute("disabled", "true");
 document.getElementById("Close").style.background = "gray";
 
 var ConnectStatus = false;
-var Room_Numbers;
+var Room_Numbers = null;
 
 function DanMu(Room_Number, Callback) {
 function ReadInt(Buffer, Start, Len) {
@@ -2876,6 +2876,7 @@ alert();
 function Connect_Room(Room_Number){
 if(Room_Number !== Room_Numbers){
 if(Room_Number){
+alert('已更新')
 Room_Numbers = Room_Number;
 wss.close();
 document.getElementById("Content").value = "";
