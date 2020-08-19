@@ -2682,7 +2682,8 @@ function Encode(Str, Op) {
   const Data = new TextEncoder("utf-8").encode(Str);
   const PacketLen = 16 + Data.byteLength;
   const Header = [0, 0, 0, 0, 0, 16, 0, 1, 0, 0, 0, Op, 0, 0, 0, 1];
-  WriteInt(Header, PacketLen);
+  alert(Data.toString())
+WriteInt(Header, PacketLen);
   return (new Uint8Array(Header.concat(...Data))).buffer;
 };
 
