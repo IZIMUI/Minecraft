@@ -2719,7 +2719,7 @@ wss.onopen = function() {
     wss.send(Token = Encode(JSON.stringify({
       "roomid": Room_Number
     }), 7));
-alert(Token)
+alert(Token.toString())
     setInterval(function() {
       wss.send(Encode("", 2));
     }, 1000);
