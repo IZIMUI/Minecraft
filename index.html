@@ -2878,7 +2878,6 @@ if(Room_Number !== Room_Numbers){
 if(Room_Number){
 alert('已更新')
 Room_Numbers = Room_Number;
-wss.close();
 document.getElementById("Content").value = "";
 DanMu(Number(Room_Number), function(Object){
 document.getElementById("Content").value += "【" + JSON.parse(Object).User + "】：" + JSON.parse(Object).Message + "\n";
